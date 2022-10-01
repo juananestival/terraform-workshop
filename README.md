@@ -32,12 +32,12 @@ folders/555555555
 another way to get only the id
 
 ```sh
-gcloud resource-manager folders list --folder=634653296365 --format=json | grep name |  awk -F' ' '{print $2}' | awk -F'"' '{print $2}' | sed 's|folders/||'
+gcloud resource-manager folders list --folder=777777 --format=json | grep name |  awk -F' ' '{print $2}' | awk -F'"' '{print $2}' | sed 's|folders/||'
 ```
 
 
 ```sh
-export WORKING_FOLDER=$(gcloud resource-manager folders list --folder=634653296365 --format=json | grep name |  awk -F' ' '{print $2}' | awk -F'"' '{print $2}' | sed 's|folders/||')
+export WORKING_FOLDER=$(gcloud resource-manager folders list --folder=777777 --format=json | grep name |  awk -F' ' '{print $2}' | awk -F'"' '{print $2}' | sed 's|folders/||')
 ```
 
 ## Basic terraform concepts
