@@ -40,7 +40,7 @@ In the case that want only refer an exsistin resource but not being part of the 
 To use an existing resource in your gcp you can use data as follows. 
 ```js
 data "google_folder" "shared" {
-  folder              = "folders/623561990244"
+  folder              = "folders/555555"
   lookup_organization = true
  
 }
